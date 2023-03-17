@@ -15,10 +15,10 @@ export default function Home() {
           <NavBar />
           <TaskBoard />
           <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 px-[16px] md:px-[36px] pb-[28px] gap-[24px]'>
-            <TaskSections task={BacklogTasks} />
-            <TaskSections task={ToDoTasks} />
-            <TaskSections task={Inprogress} />
-            <TaskSections task={Done} />
+            <TaskSections task={BacklogTasks} taskName={'Backlog Tasks'}/>
+            <TaskSections task={ToDoTasks} taskName={'To Do Tasks'}/>
+            <TaskSections task={Inprogress} taskName={'In Progress'}/>
+            <TaskSections task={Done} taskName={'Done'}/>
           </div>
         </div>
         <SideBar />
